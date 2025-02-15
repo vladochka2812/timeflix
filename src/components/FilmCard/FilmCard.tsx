@@ -21,7 +21,7 @@ const FilmCard: FC<FilmCardProps> = ({ movie, handleSelectShowtime }) => {
       <img
         src={movie.imageUrl}
         alt={movie.title}
-        className="w-full h-full max-h-[400px] object-cover"
+        className="w-full h-full md:max-h-[400px] max-h-[320px] object-cover"
       />
       <div className="p-4">
         <h2 className="text-xl font-bold text-[#FF5630] text-nowrap truncate">

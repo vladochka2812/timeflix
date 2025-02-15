@@ -159,10 +159,7 @@ const EventForm: React.FC<EventFormProps> = ({
                         : null
                     }
                     onChange={(date: Date | null) =>
-                      setValue(
-                        "start",
-                        date ? formatTime(date.toDateString()) : ""
-                      )
+                      setValue("start", date ? dayjs(date).format("HH:mm") : "")
                     }
                     showTimeSelect
                     showTimeSelectOnly
