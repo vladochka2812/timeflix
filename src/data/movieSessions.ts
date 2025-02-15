@@ -1,0 +1,253 @@
+import { MovieSessionType } from "../types/MovieSessionType";
+
+export const movieSessions: MovieSessionType[] = [
+  {
+    title: "Dune: Part Two",
+    description:
+      "Paul Atreides unites with the Fremen to seek revenge against those who destroyed his family.",
+    duration: 165,
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BNzk5MTE4YTUtNGU2My00MTYxLWE5NGItODk4YWFkOWYyMjA5XkEyXkFqcGc@._V1_.jpg",
+    sessions: [
+      { start: "2025-02-15T16:20", end: "2025-02-15T19:00" },
+      { start: "2025-02-16T12:20", end: "2025-02-16T18:00" },
+      { start: "2025-02-18T10:00", end: "2025-02-18T12:00" },
+      { start: "2025-02-20T14:00", end: "2025-02-20T16:45" },
+      { start: "2025-02-22T18:00", end: "2025-02-22T20:45" },
+      { start: "2025-02-25T20:30", end: "2025-02-25T23:15" },
+    ],
+  },
+  {
+    title: "Oppenheimer",
+    description:
+      "A dramatization of J. Robert Oppenheimer’s role in the atomic bomb development.",
+    duration: 180,
+    imageUrl:
+      "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/oppenheimer-film-poster-design-template-f57bda0f227b410a27922bac75066afb_screen.jpg?ts=1690376704",
+    sessions: [
+      { start: "2025-02-17T16:00", end: "2025-02-17T19:00" },
+      { start: "2025-02-19T11:30", end: "2025-02-19T14:30" },
+      { start: "2025-02-20T19:45", end: "2025-02-20T22:45" },
+      { start: "2025-02-24T15:00", end: "2025-02-24T18:00" },
+    ],
+  },
+  {
+    title: "Mad Max: Fury Road",
+    description:
+      "A woman rebels against a tyrannical ruler in post-apocalyptic Australia.",
+    duration: 120,
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/en/6/6e/Mad_Max_Fury_Road.jpg",
+    sessions: [
+      { start: "2025-02-16T17:00", end: "2025-02-16T19:00" },
+      { start: "2025-02-18T12:45", end: "2025-02-18T14:45" },
+      { start: "2025-02-21T20:00", end: "2025-02-21T22:00" },
+      { start: "2025-02-26T14:15", end: "2025-02-26T16:15" },
+    ],
+  },
+  {
+    title: "Interstellar",
+    description:
+      "A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.",
+    duration: 169,
+    imageUrl:
+      "https://play-lh.googleusercontent.com/AdTbI0Cx1cIPqmyNWAKUDGU0WG2c0idkTdYvBTV2ziF6gF8qd1aEmqX4ZzDp5m3jtkXjRA",
+    sessions: [
+      { start: "2025-02-16T19:00", end: "2025-02-16T21:49" },
+      { start: "2025-02-19T14:45", end: "2025-02-19T17:34" },
+      { start: "2025-02-21T20:15", end: "2025-02-21T23:04" },
+      { start: "2025-02-27T16:00", end: "2025-02-27T18:49" },
+      { start: "2025-02-19T10:00", end: "2025-02-19T12:50" },
+      { start: "2025-02-21T15:30", end: "2025-02-21T18:20" },
+      { start: "2025-02-24T19:45", end: "2025-02-24T22:35" },
+      { start: "2025-02-27T14:00", end: "2025-02-27T16:50" },
+      { start: "2025-02-29T17:30", end: "2025-02-29T20:20" },
+    ],
+  },
+  {
+    title: "Inception",
+    description:
+      "A thief who enters the dreams of others to steal their secrets is given a chance to have his past forgiven.",
+    duration: 148,
+    imageUrl:
+      "https://m.media-amazon.com/images/S/pv-target-images/cc72ff2193c0f7a85322aee988d6fe1ae2cd9f8800b6ff6e8462790fe2aacaf3.jpg",
+    sessions: [
+      { start: "2025-02-15T20:00", end: "2025-02-15T22:28" },
+      { start: "2025-02-17T14:00", end: "2025-02-17T16:28" },
+      { start: "2025-02-22T18:45", end: "2025-02-22T21:13" },
+      { start: "2025-02-28T11:30", end: "2025-02-28T13:58" },
+      { start: "2025-02-18T12:30", end: "2025-02-18T15:00" },
+      { start: "2025-02-20T16:00", end: "2025-02-20T18:30" },
+      { start: "2025-02-23T20:00", end: "2025-02-23T22:30" },
+      { start: "2025-02-26T13:00", end: "2025-02-26T15:30" },
+      { start: "2025-02-28T21:00", end: "2025-02-28T23:30" },
+    ],
+  },
+  {
+    title: "The Dark Knight",
+    description:
+      "Batman faces off against the Joker in a battle for Gotham City.",
+    duration: 152,
+    imageUrl:
+      "https://musicart.xboxlive.com/7/abb02f00-0000-0000-0000-000000000002/504/image.jpg",
+    sessions: [
+      { start: "2025-02-16T15:30", end: "2025-02-16T17:52" },
+      { start: "2025-02-18T14:00", end: "2025-02-18T16:32" },
+      { start: "2025-02-19T18:00", end: "2025-02-19T20:22" },
+      { start: "2025-02-21T17:30", end: "2025-02-21T20:02" },
+      { start: "2025-02-23T21:00", end: "2025-02-23T23:32" },
+      { start: "2025-02-23T12:15", end: "2025-02-23T14:37" },
+      { start: "2025-02-26T19:00", end: "2025-02-26T21:32" },
+      { start: "2025-02-27T21:00", end: "2025-02-27T23:22" },
+    ],
+  },
+  {
+    title: "Titanic",
+    description: "A love story unfolds aboard the ill-fated R.M.S. Titanic.",
+    duration: 195,
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_.jpg",
+    sessions: [
+      { start: "2025-02-18T10:00", end: "2025-02-18T13:15" },
+      { start: "2025-02-20T14:30", end: "2025-02-20T17:45" },
+      { start: "2025-02-24T19:00", end: "2025-02-24T22:15" },
+      { start: "2025-02-28T12:00", end: "2025-02-28T15:15" },
+      { start: "2025-02-18T10:00", end: "2025-02-18T13:15" },
+      { start: "2025-02-18T16:00", end: "2025-02-18T19:15" },
+      { start: "2025-02-18T21:00", end: "2025-02-19T00:15" },
+      { start: "2025-02-19T12:00", end: "2025-02-19T15:15" },
+      { start: "2025-02-19T18:00", end: "2025-02-19T21:15" },
+    ],
+  },
+  {
+    title: "The Lord of the Rings: The Return of the King",
+    description:
+      "The final battle for Middle-earth as Frodo and Sam reach Mount Doom.",
+    duration: 201,
+    imageUrl:
+      "https://play-lh.googleusercontent.com/KrtPDiefu0Jl21zenJX06NxN2TkOu9ilHwhc28O2vmJ5XRfFE9kI-2CunSG8Ske-xllG5Q",
+    sessions: [
+      { start: "2025-02-18T09:30", end: "2025-02-18T12:51" },
+      { start: "2025-02-18T14:00", end: "2025-02-18T17:21" },
+      { start: "2025-02-18T19:30", end: "2025-02-18T22:51" },
+      { start: "2025-02-19T10:00", end: "2025-02-19T13:21" },
+      { start: "2025-02-19T14:30", end: "2025-02-19T17:51" },
+      { start: "2025-02-19T19:00", end: "2025-02-19T22:21" },
+      { start: "2025-02-20T09:30", end: "2025-02-20T12:51" },
+      { start: "2025-02-20T14:00", end: "2025-02-20T17:21" },
+      { start: "2025-02-22T19:30", end: "2025-02-22T22:51" },
+      { start: "2025-02-23T10:00", end: "2025-02-23T13:21" },
+      { start: "2025-02-26T14:30", end: "2025-02-26T17:51" },
+      { start: "2025-02-26T19:00", end: "2025-02-26T22:21" },
+    ],
+  },
+  {
+    title: "Avengers: Endgame",
+    description: "The Avengers assemble for a final stand against Thanos.",
+    duration: 181,
+    imageUrl: "https://content.rozetka.com.ua/goods/images/big/19479238.jpg",
+    sessions: [
+      { start: "2025-02-18T09:00", end: "2025-02-18T12:01" },
+      { start: "2025-02-18T13:30", end: "2025-02-18T16:31" },
+      { start: "2025-02-18T18:00", end: "2025-02-18T21:01" },
+      { start: "2025-02-18T22:30", end: "2025-02-19T01:31" },
+      { start: "2025-02-19T10:30", end: "2025-02-19T13:31" },
+      { start: "2025-02-19T14:00", end: "2025-02-19T17:01" },
+      { start: "2025-02-19T20:00", end: "2025-02-19T23:01" },
+      { start: "2025-02-20T09:30", end: "2025-02-20T12:31" },
+      { start: "2025-02-20T14:30", end: "2025-02-20T17:31" },
+      { start: "2025-02-20T19:00", end: "2025-02-20T22:01" },
+      { start: "2025-02-21T08:30", end: "2025-02-21T11:31" },
+      { start: "2025-02-21T12:30", end: "2025-02-21T15:31" },
+      { start: "2025-02-21T17:00", end: "2025-02-21T20:01" },
+      { start: "2025-02-21T21:30", end: "2025-02-22T00:31" },
+      { start: "2025-02-22T09:00", end: "2025-02-22T12:01" },
+      { start: "2025-02-22T14:00", end: "2025-02-22T17:01" },
+      { start: "2025-02-22T18:30", end: "2025-02-22T21:31" },
+      { start: "2025-02-22T23:00", end: "2025-02-23T02:01" },
+      { start: "2025-02-23T10:00", end: "2025-02-23T13:01" },
+      { start: "2025-02-23T15:30", end: "2025-02-23T18:31" },
+      { start: "2025-02-23T20:00", end: "2025-02-23T23:01" },
+      { start: "2025-02-24T08:00", end: "2025-02-24T11:01" },
+      { start: "2025-02-24T13:00", end: "2025-02-24T16:01" },
+      { start: "2025-02-24T18:00", end: "2025-02-24T21:01" },
+      { start: "2025-02-25T09:00", end: "2025-02-25T12:01" },
+      { start: "2025-02-25T14:30", end: "2025-02-25T17:31" },
+      { start: "2025-02-25T19:30", end: "2025-02-25T22:31" },
+    ],
+  },
+  {
+    title: "Joker",
+    description:
+      "A mentally troubled comedian embarks on a downward spiral that leads to the creation of an iconic villain.",
+    duration: 122,
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BNzY3OWQ5NDktNWQ2OC00ZjdlLThkMmItMDhhNDk3NTFiZGU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    sessions: [
+      { start: "2025-02-18T10:00", end: "2025-02-18T12:02" },
+      { start: "2025-02-18T14:00", end: "2025-02-18T16:02" },
+      { start: "2025-02-18T18:30", end: "2025-02-18T20:32" },
+      { start: "2025-02-19T09:30", end: "2025-02-19T11:32" },
+      { start: "2025-02-20T15:00", end: "2025-02-20T17:02" },
+      { start: "2025-02-21T21:00", end: "2025-02-21T23:02" },
+      { start: "2025-02-22T12:00", end: "2025-02-22T14:02" },
+      { start: "2025-02-23T16:30", end: "2025-02-23T18:32" },
+      { start: "2025-02-24T19:00", end: "2025-02-24T21:02" },
+      { start: "2025-02-25T11:30", end: "2025-02-25T13:32" },
+      { start: "2025-02-26T20:00", end: "2025-02-26T22:02" },
+      { start: "2025-02-27T15:30", end: "2025-02-27T17:32" },
+      { start: "2025-02-28T09:00", end: "2025-02-28T11:02" },
+      { start: "2025-02-29T13:30", end: "2025-02-29T15:32" },
+    ],
+  },
+  {
+    title: "Gladiator",
+    description:
+      "A betrayed Roman general fights for vengeance as a gladiator in the Colosseum.",
+    duration: 155,
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSON7DyMnB97ZnVbnBYQ0qjEkcqJMK2CT1mFw&s",
+    sessions: [
+      { start: "2025-02-18T09:30", end: "2025-02-18T12:05" },
+      { start: "2025-02-18T13:30", end: "2025-02-18T16:05" },
+      { start: "2025-02-18T18:30", end: "2025-02-18T21:05" },
+      { start: "2025-02-19T10:30", end: "2025-02-19T13:05" },
+      { start: "2025-02-20T15:00", end: "2025-02-20T17:35" },
+      { start: "2025-02-21T21:00", end: "2025-02-21T23:35" },
+      { start: "2025-02-22T08:30", end: "2025-02-22T11:05" },
+      { start: "2025-02-23T14:00", end: "2025-02-23T16:35" },
+      { start: "2025-02-24T19:00", end: "2025-02-24T21:35" },
+      { start: "2025-02-25T09:00", end: "2025-02-25T11:35" },
+      { start: "2025-02-26T14:30", end: "2025-02-26T17:05" },
+      { start: "2025-02-27T20:00", end: "2025-02-27T22:35" },
+      { start: "2025-02-28T11:30", end: "2025-02-28T14:05" },
+      { start: "2025-02-29T16:30", end: "2025-02-29T19:05" },
+    ],
+  },
+  {
+    title: "The Wolf of Wall Street",
+    description:
+      "Based on the true story of Jordan Belfort, a stockbroker who rises to power and falls due to corruption and crime.",
+    duration: 180,
+    imageUrl:
+      "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+    sessions: [
+      { start: "2025-02-18T09:00", end: "2025-02-18T12:00" },
+      { start: "2025-02-18T14:30", end: "2025-02-18T17:30" },
+      { start: "2025-02-18T19:00", end: "2025-02-18T22:00" },
+      { start: "2025-02-19T10:00", end: "2025-02-19T13:00" },
+      { start: "2025-02-19T16:00", end: "2025-02-19T19:00" },
+      { start: "2025-02-19T21:30", end: "2025-02-20T00:30" },
+      { start: "2025-02-20T08:30", end: "2025-02-20T11:30" },
+      { start: "2025-02-21T13:00", end: "2025-02-21T16:00" },
+      { start: "2025-02-22T18:00", end: "2025-02-22T21:00" },
+      { start: "2025-02-23T22:30", end: "2025-02-24T01:30" },
+      { start: "2025-02-24T09:30", end: "2025-02-24T12:30" },
+      { start: "2025-02-25T15:30", end: "2025-02-25T18:30" },
+      { start: "2025-02-26T19:30", end: "2025-02-26T22:30" },
+      { start: "2025-02-27T12:00", end: "2025-02-27T15:00" },
+      { start: "2025-02-28T17:30", end: "2025-02-28T20:30" },
+      { start: "2025-02-29T21:00", end: "2025-02-29T00:00" },
+    ],
+  },
+];
