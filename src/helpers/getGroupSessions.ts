@@ -1,12 +1,15 @@
 import dayjs from "dayjs";
 import { GroupedSessionsType, TimeSlotType } from "../types/TimeSlotType";
 import { formatDate, formatTime } from "./helperDate";
+import isSameOrAfter from "dayjs/plugin/isSameOrAfter";
+
+dayjs.extend(isSameOrAfter);
 
 export const getGroupSessions = (
   sessions: TimeSlotType[]
 ): GroupedSessionsType => {
   const grouped = sessions
-    .filter((session) => dayjs(session.start).isAfter(dayjs(), "day"))
+    .filter((session) => dayjs(session.start).isSameOrAfter(dayjs(), "day"))
     ?.reduce((acc, session) => {
       const date = formatDate(session.start);
       const time = `${formatTime(session.start)}-${formatTime(session.end)}`;
