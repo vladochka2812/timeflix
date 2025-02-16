@@ -75,7 +75,6 @@ const EventForm: React.FC<EventFormProps> = ({
   }) => {
     const formattedStart = `${date}T${start}`;
     const formattedEnd = `${date}T${end}`;
-    console.log();
     const newEvent = {
       id: eventToEdit?.id || Date.now(),
       title,

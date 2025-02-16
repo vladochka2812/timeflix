@@ -27,7 +27,6 @@ export const findAvailableMovies = (
           )
         )
       );
-  console.log(datesToCheck);
   const movieMap = new Map<
     string,
     {
@@ -65,8 +64,6 @@ export const findAvailableMovies = (
       }
     });
   });
-
-  console.log(movieMap);
 
   return Array.from(movieMap.values());
 };
