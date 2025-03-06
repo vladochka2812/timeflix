@@ -23,7 +23,7 @@ const Sidebar: FC<SidebarProps> = ({
   selectedDate,
 }) => {
   return (
-    <div className="relative flex flex-col items-center justify-between h-full">
+    <div className="relative flex flex-col items-center justify-between h-full overflow-y-auto">
       <div className="flex flex-col gap-3 w-full">
         <h2 className="text-[24px] font-semibold text-white text-center">
           Make your plans

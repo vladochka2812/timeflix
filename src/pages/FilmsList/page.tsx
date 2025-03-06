@@ -29,7 +29,7 @@ const FilmsListPage = () => {
     [handleAddEvent, handleClose, openModal]
   );
   return (
-    <>
+    <div className="w-[100vw]">
       <h1 className="text-white font-bold text-[36px] mt-22 text-center">
         Movies list
       </h1>
@@ -45,7 +45,7 @@ const FilmsListPage = () => {
       <Modal isOpen={isOpen} onClose={handleClose}>
         {content}
       </Modal>
-    </>
+    </div>
   );
 };
 
