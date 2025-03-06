@@ -12,7 +12,7 @@ interface EventsCardProps {
   events: UserEventType[];
   date: string;
   handleEditEvent: (event?: UserEventType) => void;
-  handleDeleteEvent: (id: number) => void;
+  handleDeleteEvent: (id: number | string) => void;
   handleFindMovies: (date: string) => void;
 }
 

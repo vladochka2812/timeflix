@@ -45,7 +45,7 @@ export const updatePlanInDB = async (updatedPlan: any) => {
   });
 };
 
-export const deletePlanFromDB = async (id: number) => {
+export const deletePlanFromDB = async (id: number | string) => {
   const db = await openDB();
   const tx = db.transaction(STORE_NAME, "readwrite");
   tx.objectStore(STORE_NAME).delete(id);

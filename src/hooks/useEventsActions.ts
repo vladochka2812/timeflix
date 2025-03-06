@@ -28,7 +28,7 @@ export const useEventsActions = () => {
     setIsOpen(true);
   };
 
-  const handleDelete = (id: number) => {
+  const handleDelete = (id: number | string) => {
     deleteEvent(id);
     setIsOpen(false);
   };
@@ -59,7 +59,7 @@ export const useEventsActions = () => {
     handleClose();
   };
 
-  const deleteEvent = (id: number) => {
+  const deleteEvent = (id: number | string) => {
     const updatedPlans = plans.filter((event) => event.id !== id);
     setPlans(updatedPlans);
     deletePlanFromDB(id);

@@ -18,7 +18,7 @@ interface PlansMainContentProps {
   handleAddPlan: () => void;
   handleFindMovie: () => void;
   handleEditEvent: (event?: UserEventType) => void;
-  handleDeleteEvent: (id: number) => void;
+  handleDeleteEvent: (id: number | string) => void;
   handleFindMovies: (date: string) => void;
   handleOpenSidebar: (content: ReactNode) => void;
   handleFileUpload: (

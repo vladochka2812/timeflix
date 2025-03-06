@@ -57,7 +57,7 @@ const PlansPage = () => {
   );
 
   const handleConfirmDelete = useCallback(
-    (id: number) => {
+    (id: number | string) => {
       openModal(
         <ConfirmPopup
           title="Are you sure you want to delete this event?"
