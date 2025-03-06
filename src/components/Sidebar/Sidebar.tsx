@@ -6,6 +6,7 @@ import { LuPopcorn } from "react-icons/lu";
 
 import MyCalendar from "../MyCalendar/MyCalendar";
 import { regularButtonStyle } from "../../styles/reusableStyles";
+import { UploadButton } from "../UploadButton/UploadButton";
 
 interface SidebarProps {
   markedDates: string[];
@@ -13,6 +14,9 @@ interface SidebarProps {
   handleAddPlan: () => void;
   handleFindMovie: () => void;
   selectedDate?: string;
+  handleFileUpload: (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => Promise<void>;
 }
 
 const Sidebar: FC<SidebarProps> = ({
@@ -21,9 +25,10 @@ const Sidebar: FC<SidebarProps> = ({
   handleAddPlan,
   handleFindMovie,
   selectedDate,
+  handleFileUpload,
 }) => {
   return (
-    <div className="relative flex flex-col items-center justify-between h-full overflow-y-auto">
+    <div className="relative flex flex-col items-center justify-between h-full overflow-y-auto pr-1">
       <div className="flex flex-col gap-3 w-full">
         <h2 className="text-[24px] font-semibold text-white text-center">
           Make your plans
@@ -42,6 +47,12 @@ const Sidebar: FC<SidebarProps> = ({
         >
           <FiPlus size={24} /> Add New Plans
         </button>
+      </div>
+      <div className="my-2">
+        <h2 className="text-[20px] font-semibold mb-1 text-white text-center">
+          Export Google Calendar Events
+        </h2>
+        <UploadButton handleFileUpload={handleFileUpload} />
       </div>
       <div>
         <h2 className="text-[24px] font-semibold mb-1 text-white text-center">

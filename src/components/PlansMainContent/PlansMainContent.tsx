@@ -21,6 +21,9 @@ interface PlansMainContentProps {
   handleDeleteEvent: (id: number) => void;
   handleFindMovies: (date: string) => void;
   handleOpenSidebar: (content: ReactNode) => void;
+  handleFileUpload: (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => Promise<void>;
 }
 
 const PlansMainContent: FC<PlansMainContentProps> = ({
@@ -34,6 +37,7 @@ const PlansMainContent: FC<PlansMainContentProps> = ({
   handleEditEvent,
   handleFindMovies,
   handleOpenSidebar,
+  handleFileUpload,
 }) => {
   const sidebar = (
     <Sidebar
@@ -42,11 +46,12 @@ const PlansMainContent: FC<PlansMainContentProps> = ({
       handleAddPlan={handleAddPlan}
       selectedDate={selectedDate}
       handleFindMovie={handleFindMovie}
+      handleFileUpload={handleFileUpload}
     />
   );
   return (
     <div className="relative flex flex-col lg:flex-row mt-5 w-[100vw] h-[calc(100vh-5rem)] overflow-y-scroll lg:justify-between text-black">
-      <div className="hidden lg:block fixed left-0 top-[4rem] bg-zinc-900 h-[calc(100vh-4rem)] w-[350px] p-3 border-r-[#FF5630] border-r border-neutral-900 ">
+      <div className="hidden lg:block fixed left-0 top-[4rem] bg-zinc-900 h-[calc(100vh-4rem)] w-[350px] p-3 pr-0 border-r-[#FF5630] border-r border-neutral-900 ">
         {sidebar}
       </div>
       <div className="lg:hidden flex mt-5 items-center justify-center border-b-[#FF5630] border-b-[1px]">

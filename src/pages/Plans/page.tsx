@@ -32,6 +32,7 @@ const PlansPage = () => {
     openModal,
     isSheetOpen,
     setIsSheetOpen,
+    handleFileUpload,
   } = useEventsActions();
 
   const groupedPlans = useMemo(() => handleGroupPlans(plans), [plans]);
@@ -133,6 +134,7 @@ const PlansPage = () => {
         handleDeleteEvent={handleConfirmDelete}
         handleFindMovies={handleFindMovies}
         handleOpenSidebar={handleOpenSidebar}
+        handleFileUpload={handleFileUpload}
       />
       <Modal isOpen={isOpen} onClose={handleClose}>
         {content}

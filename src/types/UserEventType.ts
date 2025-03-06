@@ -1,7 +1,7 @@
 import { TimeSlotType } from "./TimeSlotType";
 
 export type UserEventType = TimeSlotType & {
-  id: number;
+  id: number | string;
   title: string;
 };
 

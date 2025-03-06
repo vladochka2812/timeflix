@@ -7,6 +7,7 @@ import {
 } from "../services/indexedDB";
 import { UserEventType } from "../types/UserEventType";
 import { useEffect, useState } from "react";
+import { uploadButton } from "../helpers/uploadPlans";
 
 export const useEventsActions = () => {
   const [plans, setPlans] = useState<UserEventType[]>([]);
@@ -26,12 +27,6 @@ export const useEventsActions = () => {
     setContent(modalContent);
     setIsOpen(true);
   };
-
-  useEffect(() => {
-    getPlansFromDB().then((data) => {
-      setPlans(data);
-    });
-  }, []);
 
   const handleDelete = (id: number) => {
     deleteEvent(id);
@@ -70,6 +65,25 @@ export const useEventsActions = () => {
     deletePlanFromDB(id);
   };
 
+  const handleFileUpload = async (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    try {
+      await uploadButton(file);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getPlansFromDB().then((data) => {
+      setPlans(data);
+    });
+  }, [handleFileUpload]);
+
   return {
     handleAddEvent,
     handleUpdateEvent,
@@ -88,5 +102,6 @@ export const useEventsActions = () => {
     openModal,
     isSheetOpen,
     setIsSheetOpen,
+    handleFileUpload,
   };
 };

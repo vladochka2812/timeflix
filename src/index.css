@@ -22,7 +22,9 @@
   border-radius: 10px;
   background: #242424;
 }
-
+.react-datepicker {
+  z-index: 100;
+}
 .react-datepicker-wrapper {
   width: 100%;
 }
