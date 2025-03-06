@@ -1,10 +1,9 @@
 import ICAL from "ical.js";
 import { savePlanToDB } from "../services/indexedDB";
+import { UserEventType } from "../types/UserEventType";
 
 export const uploadButton = (file: File) => {
-  return new Promise<
-    { id: string; title: string; start: string; end: string }[]
-  >((resolve, reject) => {
+  return new Promise<UserEventType[]>((resolve, reject) => {
     const reader = new FileReader();
 
     reader.onload = (e) => {
